@@ -170,10 +170,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             _resultString = parseResultsIntoString(result);
                             _resultDict = result;
                           });
+                          _btnController.success();
                         } catch (e) {
                           print("Error laa");
+                          _btnController.error();
                         }
-                        _btnController.reset();
+                        // _btnController.reset();
                         isClassifying = false;
                       },
               ),
@@ -212,10 +214,13 @@ class _MyHomePageState extends State<MyHomePage> {
                               });
 
                               File croppedFile = await cropImage(pickedFile);
+
                               final imgFile = File(croppedFile.path);
 
                               setState(() {
                                 imageURI = imgFile;
+                                _btnController.reset();
+                                isClassifying = false;
                               });
                               Navigator.pop(context);
                             }
@@ -247,6 +252,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
                               setState(() {
                                 imageURI = imgFile;
+                                _btnController.reset();
+                                isClassifying = false;
                               });
                               Navigator.pop(context);
                             }
