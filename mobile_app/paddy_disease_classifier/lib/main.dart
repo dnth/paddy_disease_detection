@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pet Classifier',
+      title: 'Rice Disease Classifier',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Pet Classifier'),
+      home: const MyHomePage(title: 'Rice Disease Classifier'),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -149,6 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               RoundedLoadingButton(
                 width: MediaQuery.of(context).size.width,
+                successColor: Colors.green,
                 child: const Text('Classify!',
                     style: TextStyle(color: Colors.white)),
                 controller: _btnController,
