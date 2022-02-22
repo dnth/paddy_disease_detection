@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_5492.jpg</filename>
+	<size>
+		<width>1457</width>
+		<height>1457</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>622</xmin>
+			<xmax>795</xmax>
+			<ymin>977</ymin>
+			<ymax>1333</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>804</xmin>
+			<xmax>938</xmax>
+			<ymin>17</ymin>
+			<ymax>442</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>657</xmin>
+			<xmax>722</xmax>
+			<ymin>294</ymin>
+			<ymax>421</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>blast_orig_005.jpg</filename>
+	<size>
+		<width>300</width>
+		<height>300</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>10</xmin>
+			<xmax>99</xmax>
+			<ymin>5</ymin>
+			<ymax>83</ymax>
+		</bndbox>
+	</object>
+</annotation>

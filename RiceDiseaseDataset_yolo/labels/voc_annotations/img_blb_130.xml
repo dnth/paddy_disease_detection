@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>img_blb_130.jpeg</filename>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Bacterial_Blight</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>61</xmin>
+			<xmax>221</xmax>
+			<ymin>96</ymin>
+			<ymax>133</ymax>
+		</bndbox>
+	</object>
+</annotation>

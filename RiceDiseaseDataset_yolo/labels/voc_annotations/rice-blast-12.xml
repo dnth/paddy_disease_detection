@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>rice-blast-12.jpeg</filename>
+	<size>
+		<width>235</width>
+		<height>214</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>30</xmin>
+			<xmax>59</xmax>
+			<ymin>100</ymin>
+			<ymax>187</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>38</xmin>
+			<xmax>51</xmax>
+			<ymin>34</ymin>
+			<ymax>75</ymax>
+		</bndbox>
+	</object>
+</annotation>

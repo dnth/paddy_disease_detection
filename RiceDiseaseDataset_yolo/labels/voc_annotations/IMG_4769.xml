@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_4769.jpg</filename>
+	<size>
+		<width>1495</width>
+		<height>1495</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>385</xmin>
+			<xmax>849</xmax>
+			<ymin>669</ymin>
+			<ymax>1077</ymax>
+		</bndbox>
+	</object>
+</annotation>

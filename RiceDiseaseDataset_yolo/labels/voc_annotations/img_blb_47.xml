@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>img_blb_47.JPG</filename>
+	<size>
+		<width>3081</width>
+		<height>897</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Bacterial_Blight</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>913</xmin>
+			<xmax>2676</xmax>
+			<ymin>336</ymin>
+			<ymax>502</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Bacterial_Blight</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>247</xmin>
+			<xmax>1234</xmax>
+			<ymin>384</ymin>
+			<ymax>535</ymax>
+		</bndbox>
+	</object>
+</annotation>

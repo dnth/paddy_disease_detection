@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>img_brown_44.jpg</filename>
+	<size>
+		<width>316</width>
+		<height>127</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Brown_Spot</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>95</xmin>
+			<xmax>124</xmax>
+			<ymin>62</ymin>
+			<ymax>82</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Brown_Spot</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>163</xmin>
+			<xmax>224</xmax>
+			<ymin>83</ymin>
+			<ymax>120</ymax>
+		</bndbox>
+	</object>
+</annotation>

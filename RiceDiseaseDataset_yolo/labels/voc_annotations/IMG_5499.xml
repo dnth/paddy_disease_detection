@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_5499.jpg</filename>
+	<size>
+		<width>1881</width>
+		<height>1881</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>798</xmin>
+			<xmax>981</xmax>
+			<ymin>603</ymin>
+			<ymax>1121</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>798</xmin>
+			<xmax>981</xmax>
+			<ymin>603</ymin>
+			<ymax>1121</ymax>
+		</bndbox>
+	</object>
+</annotation>

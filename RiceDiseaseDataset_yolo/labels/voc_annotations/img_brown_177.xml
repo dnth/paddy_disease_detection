@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>img_brown_177.jpg</filename>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Brown_Spot</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>80</xmin>
+			<xmax>97</xmax>
+			<ymin>39</ymin>
+			<ymax>73</ymax>
+		</bndbox>
+	</object>
+</annotation>

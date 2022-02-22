@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_20190420_195000.jpg</filename>
+	<size>
+		<width>1883</width>
+		<height>1883</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>681</xmin>
+			<xmax>800</xmax>
+			<ymin>1528</ymin>
+			<ymax>1719</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>1070</xmin>
+			<xmax>1178</xmax>
+			<ymin>864</ymin>
+			<ymax>1039</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>1422</xmin>
+			<xmax>1510</xmax>
+			<ymin>66</ymin>
+			<ymax>151</ymax>
+		</bndbox>
+	</object>
+</annotation>

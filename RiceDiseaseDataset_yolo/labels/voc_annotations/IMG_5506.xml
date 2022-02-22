@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_5506.jpg</filename>
+	<size>
+		<width>1570</width>
+		<height>1570</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>628</xmin>
+			<xmax>867</xmax>
+			<ymin>610</ymin>
+			<ymax>916</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>628</xmin>
+			<xmax>867</xmax>
+			<ymin>610</ymin>
+			<ymax>916</ymax>
+		</bndbox>
+	</object>
+</annotation>

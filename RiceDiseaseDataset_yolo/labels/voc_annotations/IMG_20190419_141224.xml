@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotation>
+	<filename>IMG_20190419_141224.jpg</filename>
+	<size>
+		<width>1528</width>
+		<height>1528</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Rice_Blast</name>
+		<pose>nan</pose>
+		<truncated>nan</truncated>
+		<difficult>nan</difficult>
+		<bndbox>
+			<xmin>815</xmin>
+			<xmax>899</xmax>
+			<ymin>54</ymin>
+			<ymax>163</ymax>
+		</bndbox>
+	</object>
+</annotation>

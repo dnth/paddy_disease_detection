@@ -1,0 +1,7 @@
+train: ./RiceDiseaseDataset_yolo/images/train
+valid: ./RiceDiseaseDataset_yolo/images/valid
+test: ./RiceDiseaseDataset_yolo/images/test
+
+nc: 3
+names: ['Brown_Spot', 'Rice_Blast', 'Bacterial_Blight']
+
