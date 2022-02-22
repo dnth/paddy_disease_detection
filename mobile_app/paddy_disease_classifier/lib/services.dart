@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-Future<Map> classifyPaddyImage(String imageBase64) async {
+Future<Map> classifyRiceImage(String imageBase64) async {
   // Animefy the given image by requesting the gradio API of AnimeGANv2
   final response = await http.post(
     Uri.parse(

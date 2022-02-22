@@ -162,15 +162,19 @@ class _MyHomePageState extends State<MyHomePage> {
                         imgBytes = imageURI!.readAsBytesSync();
                         String base64Image =
                             "data:image/png;base64," + base64Encode(imgBytes!);
-                        final result = await classifyPaddyImage(base64Image);
+
+                        try {
+                          final result = await classifyRiceImage(base64Image);
+
+                          setState(() {
+                            _resultString = parseResultsIntoString(result);
+                            _resultDict = result;
+                          });
+                        } catch (e) {
+                          print("Error laa");
+                        }
                         _btnController.reset();
-
-                        setState(() {
-                          _resultString = parseResultsIntoString(result);
-                          _resultDict = result;
-
-                          isClassifying = false;
-                        });
+                        isClassifying = false;
                       },
               ),
             ],
