@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:convert';
 import 'dart:typed_data';
+import 'package:empty_widget/empty_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
@@ -227,9 +228,23 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               imageURI == null
-                  ? const Text(
-                      'Select an image from the samples or upload your own',
-                      textAlign: TextAlign.center,
+                  ? SizedBox(
+                      height: 200,
+                      child: EmptyWidget(
+                        image: null,
+                        packageImage: PackageImage.Image_3,
+                        title: 'No image',
+                        // subTitle: 'Select an image or upload your own',
+                        titleTextStyle: const TextStyle(
+                          fontSize: 15,
+                          color: Color(0xff9da9c7),
+                          fontWeight: FontWeight.w500,
+                        ),
+                        subtitleTextStyle: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xffabb8d6),
+                        ),
+                      ),
                     )
                   : Image.file(imageURI!, height: 200, fit: BoxFit.cover),
               const SizedBox(
