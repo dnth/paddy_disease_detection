@@ -12,7 +12,7 @@ Widget buildPercentIndicator(String className, double classConfidence) {
     ),
     trailing: Text(className),
     leading: const Icon(Icons.arrow_forward_ios),
-    linearStrokeCap: LinearStrokeCap.roundAll,
+    // linearStrokeCap: LinearStrokeCap.roundAll,
     backgroundColor: Colors.grey,
     progressColor: Colors.blue,
     animation: true,
@@ -21,8 +21,6 @@ Widget buildPercentIndicator(String className, double classConfidence) {
 
 Widget buildResultsIndicators(Map resultsDict) {
   return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       buildPercentIndicator(resultsDict['confidences'][0]['label'],
           (resultsDict['confidences'][0]['confidence'])),
