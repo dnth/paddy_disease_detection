@@ -228,7 +228,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       'Select an image from the samples or upload your own',
                       textAlign: TextAlign.center,
                     )
-                  : Image.file(imageURI!, height: 300, fit: BoxFit.cover),
+                  : Image.file(imageURI!, height: 200, fit: BoxFit.cover),
               const SizedBox(
                 height: 10,
               ),
@@ -239,8 +239,25 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 10,
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Samples",
+                    style: Theme.of(context).textTheme.headline6),
+              ),
+              CarouselSlider(
+                options: CarouselOptions(
+                  height: 200,
+                  autoPlay: true,
+                  // aspectRatio: 2.5,
+                  viewportFraction: 0.35,
+                  enlargeCenterPage: true,
+                  enlargeStrategy: CenterPageEnlargeStrategy.height,
+                ),
+                items: imageSliders,
+              ),
               RoundedLoadingButton(
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.width * 0.5,
+                color: Colors.blue,
                 successColor: Colors.green,
                 // resetAfterDuration: true,
                 // resetDuration: const Duration(seconds: 10),
@@ -270,17 +287,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         isClassifying = false;
                       },
               ),
-              CarouselSlider(
-                options: CarouselOptions(
-                  // height: 400,
-                  autoPlay: true,
-                  aspectRatio: 2.5,
-                  viewportFraction: 0.45,
-                  enlargeCenterPage: true,
-                  enlargeStrategy: CenterPageEnlargeStrategy.height,
-                ),
-                items: imageSliders,
-              )
             ],
           ),
         ),
