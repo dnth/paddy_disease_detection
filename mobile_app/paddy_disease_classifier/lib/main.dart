@@ -242,8 +242,8 @@ class _MyHomePageState extends State<MyHomePage> {
               RoundedLoadingButton(
                 width: MediaQuery.of(context).size.width,
                 successColor: Colors.green,
-                resetAfterDuration: true,
-                resetDuration: const Duration(seconds: 10),
+                // resetAfterDuration: true,
+                // resetDuration: const Duration(seconds: 10),
                 child: const Text('Classify!',
                     style: TextStyle(color: Colors.white)),
                 controller: _btnController,
