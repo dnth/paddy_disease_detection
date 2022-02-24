@@ -65,9 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ]
   };
 
-  File? imageURI; // Show on image widget on app
+  File? imageFile; // Show on image widget on app
   Uint8List? imgBytes; // Store img to be sent for api inference
-  bool isClassifying = false;
 
   String parseResultsIntoString(Map results) {
     return """
@@ -110,9 +109,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 final imgFile = File(croppedFile.path);
 
                 setState(() {
-                  imageURI = imgFile;
+                  imageFile = imgFile;
                   _btnController.stop();
-                  isClassifying = false;
                 });
                 Navigator.pop(context);
               }
@@ -136,9 +134,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 setState(
                   () {
-                    imageURI = imgFile;
+                    imageFile = imgFile;
                     _btnController.stop();
-                    isClassifying = false;
                   },
                 );
                 Navigator.pop(context);
@@ -168,9 +165,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           final imgFile = await getImage(imgUrl);
 
                           setState(() {
-                            imageURI = imgFile;
+                            imageFile = imgFile;
                             _btnController.stop();
-                            isClassifying = false;
                             clearInferenceResults();
                           });
                           context.loaderOverlay.hide();
@@ -228,7 +224,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              imageURI == null
+              imageFile == null
                   ? SizedBox(
                       height: 200,
                       child: EmptyWidget(
@@ -247,7 +243,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     )
-                  : Image.file(imageURI!, height: 200, fit: BoxFit.cover),
+                  : Image.file(imageFile!, height: 200, fit: BoxFit.cover),
               const SizedBox(
                 height: 10,
               ),
@@ -278,17 +274,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width * 0.5,
                 color: Colors.blue,
                 successColor: Colors.green,
-                // resetAfterDuration: true,
-                // resetDuration: const Duration(seconds: 10),
                 child: const Text('Classify!',
                     style: TextStyle(color: Colors.white)),
                 controller: _btnController,
-                onPressed: isClassifying || imageURI == null
+                onPressed: imageFile == null
                     ? null // null value disables the button
                     : () async {
-                        isClassifying = true;
-
-                        imgBytes = imageURI!.readAsBytesSync();
+                        imgBytes = imageFile!.readAsBytesSync();
                         String base64Image =
                             "data:image/png;base64," + base64Encode(imgBytes!);
 
@@ -303,7 +295,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         } catch (e) {
                           _btnController.error();
                         }
-                        isClassifying = false;
                       },
               ),
             ],
