@@ -1,4 +1,4 @@
-package com.example.paddy_disease_classifier
+package com.rice.net
 
 import io.flutter.embedding.android.FlutterActivity
 
